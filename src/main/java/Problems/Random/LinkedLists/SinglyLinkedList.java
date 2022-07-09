@@ -148,4 +148,14 @@ public class SinglyLinkedList<T> {
             currentNode = currentNode.nextNode;
         }
     }
+
+    public int getSize() {
+        Node node = headNode;
+        int size = 0;
+        while (node != null) {
+            node = node.nextNode;
+            size++;
+        }
+        return size;
+    }
 }
